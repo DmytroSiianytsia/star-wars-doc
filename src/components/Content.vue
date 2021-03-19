@@ -86,8 +86,8 @@ export default {
       showBurger: false,
     }
   },
-  async created() {
-    this.people = await fetchData("people")
+  created() {
+    this.people = fetchData()
     window.history.pushState(null, document.title, window.location.pathname)
   },
   watch: {

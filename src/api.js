@@ -1,7 +1,5 @@
-const BASE_URL = "https://swapi.dev/api/"
+import {data} from './assets/data'
 
-export const fetchData = async (endpoint) => {
-  const res = await fetch(`${BASE_URL}${endpoint}`)
-  const data = await res.json()
-  return data.results
+export const fetchData = () => {
+  return data
 }
